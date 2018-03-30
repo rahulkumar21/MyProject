@@ -17,6 +17,21 @@ ARCHITECTURE AND CALLING PROCESS :
 Calling process of each script file as below
 Windows schedule task triggered -->	main.bat --> 	Comp-log-chk.bat (with help of server_status.lst file) --> 	Processing.bat --> 	mail.vbs -->		finally a comprehensive e-mail received to the client
 
+FOR SETTING LOGLEVEL TO 1 FOR COMPONENTS :
+------------------------------------------
+change evtloglvl %%=1 for Comp <COMPONENT NAME>
+
+FOR MONITORING LEVEL SETTINGS OF COMPONENTS :
+--------------------------------------------
+change evtloglvl TaskConfig=4 for comp <COMPONENT NAME>
+change evtloglvl ObjMgrSqlLog=4 for comp <COMPONENT NAME>
+change evtloglvl SQLParseAndExecute=4 for comp <COMPONENT NAME>
+change evtloglvl ObjMgrSqlCursorLog=5 for comp <COMPONENT NAME>
+change evtloglvl objmgrsessionlog=5 for comp <COMPONENT NAME>
+change evtloglvl EventContext=4 for comp <COMPONENT NAME>
+change evtloglvl EAITransport=5 for comp <COMPONENT NAME>
+change evtloglvl ObjMgrBusServiceLog=4 for comp <COMPONENT NAME>
+
 OS LEVEL DETAILS :
 ------------------
 We are using
