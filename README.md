@@ -1,2 +1,0 @@
-# MyProject
-Complete project details
