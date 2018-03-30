@@ -1,0 +1,3 @@
+set header false
+set footer false
+list server show SBLSRVR_NAME, SV_DISP_STATE
